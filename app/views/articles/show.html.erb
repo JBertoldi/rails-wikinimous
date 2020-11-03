@@ -1,2 +1,8 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div>
+  <h3 class=in-line><%= @article.title %></h3>
+  <%= link_to '🖋', new_article_path %>
+  <%= link_to '🗑️', articles_path(@article), method: :delete, data: { confirm: 'Are you sure you want to destroy this piece of art, leaving mankind a little less knowledgeable?'} %>
+</div>
+<div>
+  <p class=in-line><%= @article.content %></p>
+</div>

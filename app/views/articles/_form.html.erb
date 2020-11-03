@@ -1,0 +1,15 @@
+<div class='container'>
+  <%= form_for @article do |f| %>
+  <div class='form-field'>
+    <%= f.label :title %>
+    <%= f.text_field :title, placeholder: 'Article title' %>
+  </div>
+  <div class='form-field'>
+    <%= f.label :content %>
+    <%= f.text_field :content, placeholder: 'Your article here..' %>
+  </div>
+  <div class='form-field'>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 <div>
   <h3 class=in-line><%= @article.title %></h3>
-  <%= link_to '🖋', new_article_path %>
+  <%= link_to '🖋', edit_article_path(@article.id) %>
   <%= link_to '🗑️', articles_path(@article), method: :delete, data: { confirm: 'Are you sure you want to destroy this piece of art, leaving mankind a little less knowledgeable?'} %>
 </div>
 <div>
